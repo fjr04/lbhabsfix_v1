@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABS Law Office - Advokat & Konsultan Hukum</title>
+    <meta name="description" content="ABS Law Office membantu konsultasi hukum, perlindungan aset, draft/review kontrak, somasi, gugatan wanprestasi, PMH, laporan polisi, litigasi dan non-litigasi.">
+    <meta name="theme-color" content="#040b16">
+    <meta name="robots" content="index, follow">
+
+    <!-- Ganti domain ini setelah domain production Anda aktif -->
+    <link rel="canonical" href="https://example.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ABS Law Office - Advokat & Konsultan Hukum">
+    <meta property="og:description" content="Konsultasi hukum, perlindungan aset, kontrak, somasi, wanprestasi, PMH, laporan polisi, litigasi dan non-litigasi.">
+    <meta property="og:image" content="https://example.com/assets/images/og-image.jpg">
+    <meta property="og:url" content="https://example.com/">
+
+    <link rel="preload" href="assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/playfair-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/images/hero.jpg" as="image" fetchpriority="high">
+
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+    <script src="assets/js/main.min.js" defer></script>
+</head>
+<body class="antialiased selection:bg-secondary selection:text-black">
+
+    <!-- =============================================
+         NAVBAR — class md:hidden / md:flex diganti
+         nav-burger / nav-links agar breakpointnya lg
+         ============================================= -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 transparent-nav">
+        <div class="nav-inner">
+            
+            <a href="#home" class="nav-brand group" aria-label="ABS Law Office - Beranda">
+                <img src="assets/images/logo.png" alt="ABS Law Office" class="nav-logo transition-transform duration-500 group-hover:scale-105" decoding="async" fetchpriority="high" width="180" height="56" onerror="this.outerHTML='<h1 class=\'font-serif text-xl font-bold text-gold tracking-widest\'>ABS LAW OFFICE</h1>'">
+            </a>
+
+            <div class="nav-links space-x-10 font-medium text-[12px] tracking-[0.1em] uppercase">
+                <a href="#home" class="hover:text-secondary transition-colors text-white">Beranda</a>
+                <a href="#tentang" class="hover:text-secondary transition-colors">Tentang</a>
+                <a href="#layanan" class="hover:text-secondary transition-colors">Layanan</a>
+                <a href="#aktivitas" class="hover:text-secondary transition-colors">Aktivitas</a>
+                <a href="#tim" class="hover:text-secondary transition-colors">Tim Pakar</a>
+            </div>
+            
+            <a href="#kontak" class="nav-cta btn-gold px-7 py-3 rounded font-bold tracking-wider uppercase text-[10px]">
+                Jadwalkan Konsultasi
+            </a>
+            
+            <button id="mobile-menu-btn" type="button" aria-label="Buka menu navigasi" aria-controls="mobile-menu" aria-expanded="false" class="nav-burger focus:outline-none">
+                <span class="nav-burger-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+            </button>
+        </div>
+        
+        <!-- Mobile dropdown -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full lg:hidden">
+            <div class="mobile-liquid-menu flex flex-col px-6 py-5 space-y-4 text-center uppercase tracking-widest text-xs font-semibold">
+                <a href="#home" class="mobile-link mobile-liquid-link">Beranda</a>
+                <a href="#tentang" class="mobile-link mobile-liquid-link">Tentang</a>
+                <a href="#layanan" class="mobile-link mobile-liquid-link">Layanan Hukum</a>
+                <a href="#aktivitas" class="mobile-link mobile-liquid-link">Aktivitas</a>
+                <a href="#tim" class="mobile-link mobile-liquid-link">Tim Pakar</a>
+                <a href="#kontak" class="mobile-link inline-block btn-gold text-primary font-bold px-6 py-3 mt-3 rounded-full">Jadwalkan Konsultasi</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative min-h-screen flex items-center justify-start bg-cover bg-[position:75%_top] md:bg-right-top pt-20 pb-10" style="background-image: url('assets/images/hero.jpg');">
+        
+        <div class="absolute inset-0 bg-[#040b16] opacity-30 z-0 mix-blend-color"></div>
+        <div class="absolute inset-0 hero-overlay z-0"></div>
+
+        <div class="relative z-10 px-6 md:px-16 lg:px-24 max-w-5xl mt-12 md:mt-0 reveal active">
+            <div class="inline-flex items-center gap-3 border border-secondary/40 bg-secondary/10 px-4 py-1.5 rounded-full mb-6 backdrop-blur-sm shadow-[0_0_15px_rgba(197,155,39,0.15)]">
+                <div class="w-2 h-2 bg-secondary rounded-full animate-pulse shadow-[0_0_8px_#C59B27]"></div>
+                <p class="text-secondary font-bold tracking-[0.2em] uppercase text-[9px] md:text-[10px]">Andi Baroar Sakti Law Office</p>
+            </div>
+            
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight font-serif drop-shadow-[0_10px_20px_rgba(0,0,0,0.8)]">
+                Perlindungan Hukum Strategis untuk <br class="hidden md:block">
+                <span class="text-gold">Bisnis, Aset & Kepentingan Anda</span>
+            </h1>
+            
+            <p class="text-gray-300 text-sm md:text-base lg:text-lg mb-8 max-w-3xl font-light leading-relaxed tracking-wide drop-shadow-md">
+                <strong class="text-white font-medium">Legal Strategic Advisory, State/Government Examination.</strong> ABS Law Office membantu perusahaan dan individu dalam konsultasi hukum, perlindungan aset, draft/review kontrak, somasi, gugatan wanprestasi dan perbuatan melawan hukum, hingga pendampingan laporan polisi.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#kontak" class="btn-gold text-center px-8 py-3.5 font-bold tracking-[0.1em] uppercase text-xs rounded-full">
+                    Jadwalkan Konsultasi
+                </a>
+                <a href="#layanan" class="btn-outline-gold text-center px-8 py-3.5 font-bold tracking-[0.1em] uppercase text-xs rounded-full">
+                    Lihat Area Layanan
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-b from-transparent to-darkBg z-0"></div>
+    </section>
+
+    <section id="tentang" class="py-32 bg-darkBg relative">
+        <div class="container mx-auto px-6 md:px-12 max-w-5xl text-center reveal">
+            <h4 class="text-secondary font-bold uppercase tracking-[0.2em] text-xs mb-4">Tentang Kami</h4>
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-10 font-serif leading-snug">
+                Pendekatan Praktis yang Solid untuk <br><span class="text-gold italic">Menjaga & Melindungi Aset Bisnis Anda</span>
+            </h2>
+            
+            <p class="text-gray-400 font-light text-base md:text-lg mb-8 leading-relaxed max-w-3xl mx-auto">
+                Pada saat ini perlu ditingkatkan kesadaran dan pemahaman yang menyeluruh tentang perlindungan aset, mengingat perlindungan aset merupakan salah satu elemen penting dalam kehidupan pribadi dan bisnis sebagai upaya merencanakan dan menjaga agar aset pribadi dan bisnis dapat terlindungi dari resiko Penggelapan, Penipuan, Hutang Piutang, Sengketa Bisnis, Sengketa Pertanahan, Hukum Asuransi, hingga Hukum Perbankan.
+            </p>
+            
+            <p class="text-gray-400 font-light text-base md:text-lg leading-relaxed max-w-3xl mx-auto mb-16">
+                Andi Baroar Sakti Law Office menawarkan suatu kerjasama yang saling menguntungkan. Terdiri dari para Lawyer dengan kompetensi di bidangnya, kami dapat membantu staff Legal dalam menyelesaikan setiap permasalahan hukum di Perusahaan anda, agar kinerja staff Legal semakin maksimal, efektifitas serta produktifitas Perusahaan tetap terjaga.
+            </p>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-b from-transparent to-primary z-0 pointer-events-none"></div>
+    </section>
+
+    <section id="masalah" class="problem-section section-pad-mini">
+        <div class="container mx-auto px-6 md:px-12 max-w-7xl relative z-10">
+            <div class="section-head reveal">
+                <p class="section-kicker">Masalah yang Kami Tangani</p>
+                <h2 class="section-title">Pendekatan hukum untuk risiko yang sering terjadi.</h2>
+                <p class="section-subtitle">Pilih area masalah yang paling dekat dengan kebutuhan Anda, lalu konsultasikan kronologinya melalui formulir resmi.</p>
+            </div>
+            <div class="problem-grid reveal" aria-label="Daftar masalah hukum yang ditangani">
+                <a class="problem-chip" href="#kontak">Penggelapan</a>
+                <a class="problem-chip" href="#kontak">Penipuan</a>
+                <a class="problem-chip" href="#kontak">Hutang Piutang</a>
+                <a class="problem-chip" href="#kontak">Sengketa Bisnis</a>
+                <a class="problem-chip" href="#kontak">Sengketa Pertanahan</a>
+                <a class="problem-chip" href="#kontak">Hukum Asuransi</a>
+                <a class="problem-chip" href="#kontak">Hukum Perbankan</a>
+                <a class="problem-chip" href="#kontak">Kontrak & Somasi</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="layanan" class="py-32 bg-primary relative">
+        <div class="container mx-auto px-6 md:px-12 max-w-7xl reveal relative z-10">
+            <div class="text-center mb-20">
+                <h4 class="text-secondary font-bold uppercase tracking-[0.2em] text-xs mb-3">Area Praktik Hukum</h4>
+                <h2 class="text-3xl md:text-4xl font-bold text-white font-serif mb-4">Pelayanan Hukum <span class="text-gold italic">Kami</span></h2>
+                <p class="text-gray-400 font-light text-sm max-w-3xl mx-auto">Kami memberikan pelayanan hukum baik secara Non Litigasi maupun Litigasi. Di aspek non litigasi, bantuan pelayanan meliputi mediasi, pembuatan legal opinion, legal audit, lobby dan diplomasi, serta membuat rencana strategis.</p>
+            </div>
+
+            <div class="service-filter-wrap" aria-label="Filter layanan hukum">
+                <button type="button" class="service-filter-btn active" data-service-filter="all">Semua</button>
+                <button type="button" class="service-filter-btn" data-service-filter="nonlitigasi">Non Litigasi</button>
+                <button type="button" class="service-filter-btn" data-service-filter="litigasi">Litigasi</button>
+                <button type="button" class="service-filter-btn" data-service-filter="khusus">Sektor Khusus</button>
+            </div>
+
+            <div class="service-group service-group-nonlitigasi" data-service-group="nonlitigasi">
+            <div class="mb-10 flex items-center justify-center gap-4 service-heading">
+                <div class="h-px bg-gray-800 flex-1"></div>
+                <h3 class="text-2xl font-bold text-white font-serif flex items-center gap-3 px-4">
+                    <span class="section-mini-icon" aria-hidden="true">N</span> BIDANG NON LITIGASI
+                </h3>
+                <div class="h-px bg-gray-800 flex-1"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+                <div data-service-category="nonlitigasi" class="service-card p-8 rounded-lg text-center md:text-left">
+                    <span class="service-symbol" aria-hidden="true">01</span>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wide mb-3">Hukum Perusahaan & Bisnis</h4>
+                    <p class="text-gray-400 text-xs font-light leading-relaxed">Pendirian Perusahaan, Peralihan Saham, RUPS, Penentuan Hak Suara, Merger, Akuisisi, Initial Public Offering (Go Public). Pembuatan Kontrak-Kontrak Bisnis, Agensi, Lisensi, Franchise, Penanaman Modal Asing (PMA/PMDN).</p>
+                </div>
+
+                <div data-service-category="nonlitigasi" class="service-card p-8 rounded-lg text-center md:text-left">
+                    <span class="service-symbol" aria-hidden="true">02</span>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wide mb-3">Konstruksi & Lingkungan</h4>
+                    <p class="text-gray-400 text-xs font-light leading-relaxed">Pembuatan Perjanjian Dalam Penyelesaian Sengketa Lingkungan, Pembuatan perjanjian pemborongan, Pembuatan AMDAL.</p>
+                </div>
+
+                <div data-service-category="nonlitigasi" class="service-card p-8 rounded-lg text-center md:text-left">
+                    <span class="service-symbol" aria-hidden="true">03</span>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wide mb-3">Hak Atas Kekayaan Intelektual</h4>
+                    <p class="text-gray-400 text-xs font-light leading-relaxed">Pendaftaran Atas Hak Merek Dagang, Paten, Cipta, Rahasia Dagang, Rangkaian Sirkuit, Varietas Tanaman dan Desain Industri (Termasuk Pembuatan dan Pendaftaran Perjanjian Lisensi).</p>
+                </div>
+
+                <div data-service-category="nonlitigasi" class="service-card p-8 rounded-lg text-center md:text-left">
+                    <span class="service-symbol" aria-hidden="true">04</span>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wide mb-3">Anti Monopoli & Persaingan</h4>
+                    <p class="text-gray-400 text-xs font-light leading-relaxed">Agar Perjanjian Yang Dibuat Tidak Melanggar Atas Ketentuan Mengenai Anti Monopoli Dan Persaingan Usaha Tidak Sehat.</p>
+                </div>
+
+                <div data-service-category="nonlitigasi" class="service-card p-8 rounded-lg text-center md:text-left">
+                    <span class="service-symbol" aria-hidden="true">01</span>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wide mb-3">Hukum Perbankan & Asuransi</h4>
+                    <p class="text-gray-400 text-xs font-light leading-relaxed">Pembuatan Perjanjian Kredit, Pengikatan Jaminan, Eksekusi Hak Tanggungan, Penjualan Lelang. Review atas perjanjian polis asuransi (jiwa maupun harta perusahaan), dan pengajuan Klaim Asuransi.</p>
+                </div>
+
+                <div data-service-category="nonlitigasi" class="service-card p-8 rounded-lg text-center md:text-left">
+                    <span class="service-symbol" aria-hidden="true">06</span>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wide mb-3">Hukum Ketenagakerjaan</h4>
+                    <p class="text-gray-400 text-xs font-light leading-relaxed">Membuat Peraturan Perusahaan, Kesepakatan Kerja Bersama, Pemutusan Hubungan Kerja Dan Penyelesaian Masalah Perburuhan baik di lembaga Bipartit, Konsiliasi, mediasi maupun Pengadilan Perburuhan.</p>
+                </div>
+
+                <div data-service-category="nonlitigasi" class="service-card p-8 rounded-lg text-center md:text-left">
+                    <span class="service-symbol" aria-hidden="true">07</span>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wide mb-3">Pertambangan, Agraria & SDA</h4>
+                    <p class="text-gray-400 text-xs font-light leading-relaxed">Pengurusan Sertifikasi Tanah, Pengurusan Perjanjian Jual Beli Tanah. Pembuatan kontrak karya, kerjasama perusahaan pertambangan nasional dengan asing dan swasta dalam negeri.</p>
+                </div>
+
+                <div data-service-category="khusus" class="service-card p-8 rounded-lg text-center md:text-left">
+                    <span class="service-symbol" aria-hidden="true">08</span>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wide mb-3">Sektor Khusus Lainnya</h4>
+                    <p class="text-gray-400 text-xs font-light leading-relaxed">Hukum Kesehatan (Informed Consent), Hukum Keluarga, Perdagangan Internasional, Informasi & Teknologi (Software/Lisensi), Kelautan, dan Hukum Perlindungan Konsumen.</p>
+                </div>
+
+                <div data-service-category="nonlitigasi" class="service-card p-8 rounded-lg text-center md:text-left">
+                    <span class="service-symbol" aria-hidden="true">09</span>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wide mb-3">Hukum T.U.N & Gov. Affair</h4>
+                    <p class="text-gray-400 text-xs font-light leading-relaxed">Konsultasi teknik dan strategi beracara di PTUN/PTTUN. Serta membangun hubungan dengan pemerintahan dan birokrasi dalam kaitan dengan perijinan dan legalitas.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="service-group service-group-litigasi" data-service-group="litigasi">
+            <div class="mb-10 flex items-center justify-center gap-4 service-heading">
+                <div class="h-px bg-gray-800 flex-1"></div>
+                <h3 class="text-2xl font-bold text-white font-serif flex items-center gap-3 px-4">
+                    <span class="section-mini-icon" aria-hidden="true">L</span> BIDANG LITIGASI
+                </h3>
+                <div class="h-px bg-gray-800 flex-1"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+                <div data-service-category="litigasi" class="service-card p-6 rounded-lg text-center">
+                    <span class="service-symbol" aria-hidden="true">10</span>
+                    <h4 class="text-white font-bold text-sm mb-2">Hukum Perdata</h4>
+                    <p class="text-gray-400 text-[11px] font-light">Beracara dihadapan Pengadilan Negeri, Niaga, dan Agama mewakili klien sebagai Kuasa Penggugat maupun Tergugat.</p>
+                </div>
+                <div data-service-category="litigasi" class="service-card p-6 rounded-lg text-center">
+                    <span class="service-symbol" aria-hidden="true">11</span>
+                    <h4 class="text-white font-bold text-sm mb-2">Hukum Pidana</h4>
+                    <p class="text-gray-400 text-[11px] font-light">Mendampingi klien selaku Penasehat Hukum dalam penyidikan Kepolisian, Kejaksaan, KPK, dan Pengadilan.</p>
+                </div>
+                <div data-service-category="litigasi" class="service-card p-6 rounded-lg text-center">
+                    <span class="service-symbol" aria-hidden="true">12</span>
+                    <h4 class="text-white font-bold text-sm mb-2">Hukum T.U.N</h4>
+                    <p class="text-gray-400 text-[11px] font-light">Bertindak mewakili dan beracara dihadapan Pengadilan Tata Usaha Negara (PTUN, PTTUN) selaku kuasa Penggugat/Tergugat.</p>
+                </div>
+                <div data-service-category="litigasi" class="service-card p-6 rounded-lg text-center">
+                    <span class="service-symbol" aria-hidden="true">13</span>
+                    <h4 class="text-white font-bold text-sm mb-2">Hukum Perburuhan</h4>
+                    <p class="text-gray-400 text-[11px] font-light">Beracara Pengadilan Perselisihan Hubungan Industrial mewakili buruh maupun Pengusaha/Majikan.</p>
+                </div>
+                <div data-service-category="litigasi" class="service-card p-6 rounded-lg text-center">
+                    <span class="service-symbol" aria-hidden="true">14</span>
+                    <h4 class="text-white font-bold text-sm mb-2">Hukum Kepailitan</h4>
+                    <p class="text-gray-400 text-[11px] font-light">Beracara di pengadilan niaga, baik mewakili Pemohon ataupun Termohon Pailit.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-b from-transparent to-darkBg z-0 pointer-events-none"></div>
+    </section>
+
+        <section id="alur" class="process-section section-pad-mini">
+            <div class="container mx-auto px-6 md:px-12 max-w-7xl relative z-10">
+                <div class="section-head reveal">
+                    <p class="section-kicker">Alur Konsultasi</p>
+                    <h2 class="section-title">Tiga langkah sederhana menuju strategi hukum.</h2>
+                    <p class="section-subtitle">Proses dibuat ringan untuk calon klien: mulai dari ringkasan masalah, review awal, sampai diskusi strategi secara virtual atau pertemuan terbatas.</p>
+                </div>
+                <div class="process-grid reveal">
+                    <article class="process-step">
+                        <span>01</span>
+                        <h3>Kirim Ringkasan Masalah</h3>
+                        <p>Ceritakan kronologi singkat, pihak terkait, dokumen utama, dan bantuan hukum yang dibutuhkan.</p>
+                    </article>
+                    <article class="process-step">
+                        <span>02</span>
+                        <h3>Review Awal oleh Tim</h3>
+                        <p>Tim ABS Law Office meninjau kebutuhan dan menentukan pendekatan awal yang paling relevan.</p>
+                    </article>
+                    <article class="process-step">
+                        <span>03</span>
+                        <h3>Konsultasi & Strategi</h3>
+                        <p>Diskusi dilakukan secara virtual atau pertemuan terbatas untuk menyusun langkah hukum berikutnya.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="aktivitas" class="activity-section section-pad">
+            <div class="activity-heading reveal">
+                <div>
+                    <p class="section-kicker">Activities</p>
+                    <h2 class="section-title">Aktivitas strategis yang terdokumentasi.</h2>
+                    <p class="section-subtitle">Dokumentasi aktivitas hukum, advokasi, koordinasi, serta keterlibatan strategis ABS Law Office.</p>
+                </div>
+                <div class="activity-controls" aria-label="Kontrol aktivitas">
+                    <button type="button" data-activity-prev aria-label="Geser aktivitas sebelumnya">←</button>
+                    <button type="button" data-activity-next aria-label="Geser aktivitas berikutnya">→</button>
+                </div>
+            </div>
+
+            <div class="activity-rail reveal" data-activity-rail>
+                <article class="activity-card featured">
+                    <img src="assets/images/activity-1/1.jpg" alt="Koordinasi Kepolisian" loading="lazy" decoding="async">
+                    <div><span>01</span><h3>Koordinasi Kepolisian</h3><p>Koordinasi dengan Kapolri, Kabareskrim dan Propam dalam rangka mendukung program Kepolisian Republik Indonesia yang Presisi.</p></div>
+                </article>
+                <article class="activity-card">
+                    <img src="assets/images/activity-2/1.jpg" alt="Arahan Presiden di Istana" loading="lazy" decoding="async">
+                    <div><span>02</span><h3>Arahan Presiden di Istana</h3><p>Memohon arahan dan kebijakan Bapak Presiden Joko Widodo di Istana Negara sehubungan permasalahan lahan KSO di Pesapen Kalianak, Surabaya.</p></div>
+                </article>
+                <article class="activity-card">
+                    <img src="assets/images/activity-3/1.jpg" alt="Gugatan Wanprestasi" loading="lazy" decoding="async">
+                    <div><span>03</span><h3>Gugatan Wanprestasi</h3><p>Gugatan wanprestasi di PN Batam antara perusahaan perkapalan nasional melawan perusahaan PMA internasional.</p></div>
+                </article>
+                <article class="activity-card">
+                    <img src="assets/images/activity-4/1.jpg" alt="Advokasi Yayasan PMII" loading="lazy" decoding="async">
+                    <div><span>04</span><h3>Advokasi PMII</h3><p>Advokasi dan pembelaan hukum kepada Yayasan PMII Bunga di wilayah Pengadilan Negeri Jakarta Timur.</p></div>
+                </article>
+                <article class="activity-card">
+                    <img src="assets/images/activity-5/1.jpg" alt="Kasus Penipuan Asuransi" loading="lazy" decoding="async">
+                    <div><span>05</span><h3>Penipuan Asuransi</h3><p>Memberikan advokasi kepada klien yang mengalami penipuan asuransi.</p></div>
+                </article>
+                <article class="activity-card">
+                    <img src="assets/images/activity-6/1.jpg" alt="Kerjasama Pajakind" loading="lazy" decoding="async">
+                    <div><span>06</span><h3>Kerjasama Pajakind</h3><p>Kerja sama untuk mengenal lebih dalam mengenai perpajakan sebagaimana slogan “Orang Bijak Taat Pajak”.</p></div>
+                </article>
+            </div>
+        </section>
+
+        <section id="tim" class="team-section section-pad">
+            <div class="section-head reveal team-head-clean">
+                <p class="section-kicker">Advokat & Pengacara</p>
+                <h2 class="section-title">Profil <span class="text-gold italic">Tim Pakar</span></h2>
+                <p class="section-subtitle">Klik kartu untuk melihat pengalaman karir dan profil singkat setiap anggota tim.</p>
+            </div>
+
+            <div class="team-gallery reveal">
+                <button class="team-profile-card" type="button" data-profile="andi" aria-label="Buka profil Andi Baroar Nasution">
+                    <div class="team-photo-wrap">
+                        <img src="assets/images/team-andi.jpg" alt="Andi Baroar Nasution" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('image-missing');this.remove()">
+                    </div>
+                    <div class="team-profile-content">
+                        <p>Managing Partner</p>
+                        <h3>Andi Baroar Nasution, S.H., M.H.</h3>
+                        <span>Klik untuk lihat profil lengkap</span>
+                    </div>
+                </button>
+
+                <button class="team-profile-card" type="button" data-profile="iskandar" aria-label="Buka profil H. Achmad Iskandar">
+                    <div class="team-photo-wrap">
+                        <img src="assets/images/team-iskandar.jpg" alt="H. Achmad Iskandar" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('image-missing');this.remove()">
+                    </div>
+                    <div class="team-profile-content">
+                        <p>Pengacara</p>
+                        <h3>H. Achmad Iskandar, S.H.</h3>
+                        <span>Klik untuk lihat profil lengkap</span>
+                    </div>
+                </button>
+
+                <button class="team-profile-card" type="button" data-profile="adam" aria-label="Buka profil Adam Suwahyo">
+                    <div class="team-photo-wrap">
+                        <img src="assets/images/team-adam.jpg" alt="Adam Suwahyo" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('image-missing');this.remove()">
+                    </div>
+                    <div class="team-profile-content">
+                        <p>Pengacara</p>
+                        <h3>Adam Suwahyo, S.H., M.H.</h3>
+                        <span>Klik untuk lihat profil lengkap</span>
+                    </div>
+                </button>
+
+                <button class="team-profile-card" type="button" data-profile="widi" aria-label="Buka profil Widi Faris Fauzan">
+                    <div class="team-photo-wrap">
+                        <img src="assets/images/team-widi.jpg" alt="Widi Faris Fauzan" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('image-missing');this.remove()">
+                    </div>
+                    <div class="team-profile-content">
+                        <p>Pengacara</p>
+                        <h3>Widi Faris Fauzan, S.H., M.H.</h3>
+                        <span>Klik untuk lihat profil lengkap</span>
+                    </div>
+                </button>
+
+                <button class="team-profile-card" type="button" data-profile="caryo" aria-label="Buka profil Caryo Saputra">
+                    <div class="team-photo-wrap">
+                        <img src="assets/images/team-caryo.jpg" alt="Caryo Saputra" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('image-missing');this.remove()">
+                    </div>
+                    <div class="team-profile-content">
+                        <p>Staff Legal</p>
+                        <h3>Caryo Saputra, S.H.</h3>
+                        <span>Klik untuk lihat profil lengkap</span>
+                    </div>
+                </button>
+            </div>
+        </section>
+
+        <section class="trust-strip-section section-pad-mini" aria-label="Legalitas dan kepercayaan">
+            <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+                <div class="trust-strip reveal">
+                    <div>
+                        <p class="section-kicker">Legalitas & Kepercayaan</p>
+                        <h2>Advokat terdaftar, dokumen legalitas tersedia pada sesi konsultasi resmi.</h2>
+                    </div>
+                    <p>Semua pengacara kami telah terdaftar dan memiliki Kartu Tanda Pengenal Advokat (KTPA) PERADI.</p>
+                </div>
+            </div>
+        </section>
+
+    <section id="kontak" class="contact-end-section bg-darkBg relative overflow-hidden">
+        <div class="container mx-auto px-6 md:px-12 relative z-10">
+            <div class="contact-end-card reveal">
+                <div class="contact-end-info">
+                    <p class="contact-end-eyebrow">Terhubung Bersama Kami</p>
+                    <h2 class="contact-end-title">Reservasi <span>Konsultasi</span></h2>
+
+                    <div class="contact-end-list">
+                        <div>
+                            <h3>Alamat</h3>
+                            <p>Gedung Antam Office Park Tower B Lt. 6<br>Jl. Letjen. TB Simatupang No. 1<br>Tanjung Barat, Jakarta Selatan 12530</p>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>abs.lawoffice88@gmail.com<br>abs.lawoffice@gmail.com</p>
+                        </div>
+                        <div>
+                            <h3>Direct Line / WA</h3>
+                            <p>0852-8004-8234<br>0857-7915-7357</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="contactForm" action="/api/contact" method="POST" class="contact-end-form" novalidate>
+                    <div class="contact-form-grid">
+                        <div class="contact-field">
+                            <label for="name">Nama / Instansi</label>
+                            <input type="text" id="name" name="Nama_Pengirim" autocomplete="name" aria-label="Nama atau instansi Anda" placeholder="Contoh: PT ABC Sejahtera / Bapak Andi" required>
+                        </div>
+                        <div class="contact-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="Email_Pengirim" autocomplete="email" inputmode="email" aria-label="Alamat email" placeholder="nama@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="contact-field">
+                        <label for="subject">Subjek</label>
+                        <input type="text" id="subject" name="Subjek" aria-label="Subjek keperluan" placeholder="Contoh: Sengketa Bisnis / Review Kontrak / Somasi" required>
+                    </div>
+
+                    <div class="contact-field">
+                        <label for="message">Deskripsi Singkat</label>
+                        <textarea id="message" name="Pesan" rows="5" aria-label="Deskripsi singkat pesan" placeholder="Ceritakan kronologi singkat, pihak terkait, dan bantuan hukum yang dibutuhkan." required></textarea>
+                    </div>
+
+                    <div class="contact-field hp-field" aria-hidden="true">
+                        <label for="company_website">Website Perusahaan</label>
+                        <input type="text" id="company_website" name="company_website" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <div class="contact-actions">
+                        <button type="submit" id="btnSubmitEmail" class="contact-btn contact-btn-gold">
+                            <span class="button-dot" aria-hidden="true"></span>
+                            Kirim Pesan Email
+                        </button>
+
+                        <button type="button" onclick="sendToWA()" class="contact-btn contact-btn-wa">
+                            <span class="button-dot button-dot-wa" aria-hidden="true"></span>
+                            Kirim Via WhatsApp
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <footer class="site-footer-clean">
+                <img src="assets/images/logo.png" alt="ABS Law Office" width="180" height="56" decoding="async" loading="lazy" onerror="this.outerHTML=''">
+                <p>&copy; <span id="year"></span> ABS LAW OFFICE. ADVOKAT & LEGAL KONSULTAN. TERDAFTAR RESMI PERADI.</p>
+            </footer>
+        </div>
+    </section>
+
+    <div id="profileModal" class="profile-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="profileTitle">
+        <div class="profile-dialog">
+            <button type="button" class="modal-close" data-close-profile aria-label="Tutup profil">&times;</button>
+            <p id="profileRole" class="section-kicker"></p>
+            <h2 id="profileTitle"></h2>
+            <div id="profileBody" class="profile-body"></div>
+        </div>
+    </div>
+
+    <div id="customAlert" class="fixed inset-0 z-[110] flex items-center justify-center bg-[#040b16]/80 backdrop-blur-md opacity-0 invisible transition-all duration-300" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="bg-cardBg border border-secondary/30 p-8 rounded-[28px] shadow-[0_0_40px_rgba(0,0,0,0.8)] max-w-sm w-full mx-4 transform scale-95 transition-transform duration-300 text-center" id="alertBox">
+            <div id="alertIcon" class="mb-5"></div>
+            <h3 id="alertTitle" class="text-xl font-serif text-white mb-2"></h3>
+            <p id="alertMessage" class="text-gray-400 text-xs font-light leading-relaxed mb-8"></p>
+            <button type="button" onclick="closeCustomAlert()" id="alertBtn" class="w-full py-3.5 rounded-full text-[#040b16] font-bold tracking-widest uppercase text-[10px] transition-colors">TUTUP</button>
+        </div>
+    </div>
+</body>
+</html>
