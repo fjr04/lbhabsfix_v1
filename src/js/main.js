@@ -317,7 +317,7 @@ function sendToWA() {
     }
 
     const textWA = encodeURIComponent(`Halo ABS Law Office,\n\nPerkenalkan, nama saya: ${name}\nEmail: ${email}\nTerkait keperluan: ${subject}\n\n${message}`);
-    window.open(`https://wa.me/6285280048234?text=${textWA}`, '_blank', 'noopener,noreferrer');
+    window.open(`https://wa.me/6285771550826?text=${textWA}`, '_blank', 'noopener,noreferrer');
 }
 
 window.showCustomAlert = showCustomAlert;
